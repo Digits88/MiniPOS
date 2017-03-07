@@ -58,6 +58,7 @@ namespace MiniPOS
 
         private void Display_Prod_Supp_Map()
         {
+            Clear_Product_Supplier();
             SqlDataAdapter da = new SqlDataAdapter("select * from product_supplier P, supplier S where P.supp_id = S.sup_Id", con.ActiveConn());
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -119,6 +120,7 @@ namespace MiniPOS
             MessageBox.Show("The Product-Supplier Information is saved successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Clear_Product_Supplier();
             Display_Prod_Supp_Map();
+            CalculateTotalSum();
         }
 
         private void prMap_update_button_Click(object sender, EventArgs e)

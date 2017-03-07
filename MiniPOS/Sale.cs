@@ -57,6 +57,7 @@ namespace MiniPOS
 
         private void Display_Sale()
         {
+            Clear_Sale();
             //string tmp = Retrieve_InvProdId();
             SqlDataAdapter da = new SqlDataAdapter("select * from prod_inventory P, sale S where P.inv_Id = S.invSale_Id", con.ActiveConn());
             DataTable dt = new DataTable();

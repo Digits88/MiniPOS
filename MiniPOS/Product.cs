@@ -23,7 +23,7 @@ namespace MiniPOS
         private void Clear_Product()
         {
             itemProdName_textBox.Clear();
-            ItemProdType_comboBox.SelectedIndex = -1;
+            ItemProdType_comboBox.SelectedIndex = 0;
             itemProdName_textBox.Focus();
         }
 

@@ -25,17 +25,16 @@ namespace MiniPOS
             txtFirstName.Clear();
             txtLastName.Clear();
             txtTelephone.Clear();
-            cboKebele.SelectedIndex = -1;
-            cboCity.SelectedIndex = -1;
-            cboContract.SelectedIndex = -1;
+            cboKebele.SelectedIndex = 0;
+            cboCity.SelectedIndex = 0;
+            cboContract.SelectedIndex = 0;
             txtCustomerType.Text = "Contract";
-            //custEnd_dateTimePicker.Value = now();
             txtFirstName.Focus();
         }
 
         private void DisplayCustomer()
         {
-
+            ClearCustomer();
             var dataAdapter = new SqlDataAdapter("select * from customer", connection.ActiveConn());
             var dataTable = new DataTable();
             dataAdapter.Fill(dataTable);
@@ -74,8 +73,6 @@ namespace MiniPOS
         private void btnUpdateCustomer_Click(object sender, EventArgs e)
         {
             var command = new SqlCommand("update customer set firstname = '" + txtFirstName.Text + "', lastname = '" + txtLastName.Text + "', city = '" + cboCity.Text + "', kebele = '" + cboKebele.Text + "', telephone = '" + txtTelephone.Text + "', start_date = '" + date + "', end_date = '" + custEnd_dateTimePicker.Value + "', contract_type = '" + cboContract.Text + "' where firstname = '" + txtFirstName.Text + "' ", connection.ActiveConn());
-            //sup_fname = '" + firstName_textBox.Text + "',
-            //cust_type = '" + custType_textBox.Text + "'
             command.ExecuteNonQuery();
             MessageBox.Show("The Customer Information is updated successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ClearCustomer();

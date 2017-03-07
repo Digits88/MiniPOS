@@ -24,14 +24,14 @@ namespace MiniPOS
             firstName_textBox.Clear();
             lastName_textBox.Clear();
             tel_textBox.Clear();
-            city_comboBox.SelectedIndex = -1; //to clear the combobox
-            kebele_comboBox.SelectedIndex = -1;
+            city_comboBox.SelectedIndex = 0; 
+            kebele_comboBox.SelectedIndex = 0;
             firstName_textBox.Focus();
         }
 
         private void Display_Supplier()
         {
-
+            Clear_Supplier();
             SqlDataAdapter sda = new SqlDataAdapter("select * from supplier", conn.ActiveConn());
             DataTable dt = new DataTable();
             sda.Fill(dt);
