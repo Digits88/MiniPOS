@@ -18,22 +18,23 @@ namespace MiniPOS
             InitializeComponent();
         }
 
-        private void Clear()
+        private void LoginClear()
         {
-            username_textBox.Clear();
-            password_textBox.Clear();
-            username_textBox.Focus();
+            txtUsername.Clear();
+            txtPassword.Clear();
+            txtUsername.Focus();
         }
 
-        private void Btn_exit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void Btn_ok_Click(object sender, EventArgs e)
+        private void btnOk_Click(object sender, EventArgs e)
         {
+            //also check the roles
             Connection conn = new Connection();
-            SqlDataAdapter sda = new SqlDataAdapter("select * from profile where username='" + username_textBox.Text + "' and password='" + password_textBox.Text + "'", conn.ActiveConn());
+            SqlDataAdapter sda = new SqlDataAdapter("select * from profile where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", conn.ActiveConn());
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if(dt.Rows.Count == 1)
@@ -45,7 +46,7 @@ namespace MiniPOS
             else
             {
                 MessageBox.Show("Incorrect username or password!!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                Clear();
+                LoginClear();
             }
         }
     }

@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
-            this.sale_product_comboBox = new System.Windows.Forms.ComboBox();
+            this.cboSaleProductName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.sale_totPrice_Label = new System.Windows.Forms.Label();
+            this.lblSaleTotalPrice = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblProductId = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.sale__dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.datePickerSaleDate = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.sale_price_textBox = new System.Windows.Forms.TextBox();
-            this.sale_qty_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.txtSaleUnitPrice = new System.Windows.Forms.TextBox();
+            this.numericSaleQty = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.sale_remove_button = new System.Windows.Forms.Button();
-            this.sale_addToList_button = new System.Windows.Forms.Button();
-            this.sale_new_button = new System.Windows.Forms.Button();
+            this.btnSaleRemoveFromList = new System.Windows.Forms.Button();
+            this.btnSaleAddToList = new System.Windows.Forms.Button();
+            this.btnSaleClearNew = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.sale_TotalPrice_Label = new System.Windows.Forms.Label();
+            this.lblSaleSumTotalPrice = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.sale_dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSalePurchaseList = new System.Windows.Forms.DataGridView();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,12 +58,12 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.sale_type_comboBox = new System.Windows.Forms.ComboBox();
+            this.cboSaleType = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.sale_purchase_button = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.sale_qty_numericUpDown)).BeginInit();
+            this.btnSalePurchase = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSaleQty)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sale_dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalePurchaseList)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -78,16 +78,16 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "Sales Type :";
             // 
-            // sale_product_comboBox
+            // cboSaleProductName
             // 
-            this.sale_product_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sale_product_comboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_product_comboBox.FormattingEnabled = true;
-            this.sale_product_comboBox.Location = new System.Drawing.Point(195, 43);
-            this.sale_product_comboBox.Name = "sale_product_comboBox";
-            this.sale_product_comboBox.Size = new System.Drawing.Size(291, 33);
-            this.sale_product_comboBox.TabIndex = 18;
-            this.sale_product_comboBox.SelectedIndexChanged += new System.EventHandler(this.sale_product_comboBox_SelectedIndexChanged);
+            this.cboSaleProductName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSaleProductName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSaleProductName.FormattingEnabled = true;
+            this.cboSaleProductName.Location = new System.Drawing.Point(195, 43);
+            this.cboSaleProductName.Name = "cboSaleProductName";
+            this.cboSaleProductName.Size = new System.Drawing.Size(291, 33);
+            this.cboSaleProductName.TabIndex = 18;
+            this.cboSaleProductName.SelectedIndexChanged += new System.EventHandler(this.sale_product_comboBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -109,15 +109,15 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "ETB";
             // 
-            // sale_totPrice_Label
+            // lblSaleTotalPrice
             // 
-            this.sale_totPrice_Label.AutoSize = true;
-            this.sale_totPrice_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_totPrice_Label.Location = new System.Drawing.Point(707, 143);
-            this.sale_totPrice_Label.Name = "sale_totPrice_Label";
-            this.sale_totPrice_Label.Size = new System.Drawing.Size(47, 25);
-            this.sale_totPrice_Label.TabIndex = 3;
-            this.sale_totPrice_Label.Text = "0.00";
+            this.lblSaleTotalPrice.AutoSize = true;
+            this.lblSaleTotalPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaleTotalPrice.Location = new System.Drawing.Point(707, 143);
+            this.lblSaleTotalPrice.Name = "lblSaleTotalPrice";
+            this.lblSaleTotalPrice.Size = new System.Drawing.Size(47, 25);
+            this.lblSaleTotalPrice.TabIndex = 3;
+            this.lblSaleTotalPrice.Text = "0.00";
             // 
             // label7
             // 
@@ -128,14 +128,14 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "ETB";
             // 
-            // label13
+            // lblProductId
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(200, 20);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 20);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "label13";
+            this.lblProductId.AutoSize = true;
+            this.lblProductId.Location = new System.Drawing.Point(200, 20);
+            this.lblProductId.Name = "lblProductId";
+            this.lblProductId.Size = new System.Drawing.Size(60, 20);
+            this.lblProductId.TabIndex = 26;
+            this.lblProductId.Text = "label13";
             // 
             // label12
             // 
@@ -147,14 +147,14 @@
             this.label12.TabIndex = 30;
             this.label12.Text = "ETB";
             // 
-            // sale__dateTimePicker
+            // datePickerSaleDate
             // 
-            this.sale__dateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale__dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.sale__dateTimePicker.Location = new System.Drawing.Point(195, 93);
-            this.sale__dateTimePicker.Name = "sale__dateTimePicker";
-            this.sale__dateTimePicker.Size = new System.Drawing.Size(291, 31);
-            this.sale__dateTimePicker.TabIndex = 0;
+            this.datePickerSaleDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datePickerSaleDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datePickerSaleDate.Location = new System.Drawing.Point(195, 93);
+            this.datePickerSaleDate.Name = "datePickerSaleDate";
+            this.datePickerSaleDate.Size = new System.Drawing.Size(291, 31);
+            this.datePickerSaleDate.TabIndex = 0;
             // 
             // label6
             // 
@@ -166,26 +166,26 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Quantity :";
             // 
-            // sale_price_textBox
+            // txtSaleUnitPrice
             // 
-            this.sale_price_textBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_price_textBox.Location = new System.Drawing.Point(707, 95);
-            this.sale_price_textBox.Name = "sale_price_textBox";
-            this.sale_price_textBox.ReadOnly = true;
-            this.sale_price_textBox.Size = new System.Drawing.Size(120, 31);
-            this.sale_price_textBox.TabIndex = 2;
-            this.sale_price_textBox.Text = "0.00";
-            this.sale_price_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sale_price_textBox.TextChanged += new System.EventHandler(this.sale_price_textBox_TextChanged);
+            this.txtSaleUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSaleUnitPrice.Location = new System.Drawing.Point(707, 95);
+            this.txtSaleUnitPrice.Name = "txtSaleUnitPrice";
+            this.txtSaleUnitPrice.ReadOnly = true;
+            this.txtSaleUnitPrice.Size = new System.Drawing.Size(120, 31);
+            this.txtSaleUnitPrice.TabIndex = 2;
+            this.txtSaleUnitPrice.Text = "0.00";
+            this.txtSaleUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSaleUnitPrice.TextChanged += new System.EventHandler(this.txtSaleUnitPrice_TextChanged);
             // 
-            // sale_qty_numericUpDown
+            // numericSaleQty
             // 
-            this.sale_qty_numericUpDown.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_qty_numericUpDown.Location = new System.Drawing.Point(707, 44);
-            this.sale_qty_numericUpDown.Name = "sale_qty_numericUpDown";
-            this.sale_qty_numericUpDown.Size = new System.Drawing.Size(120, 31);
-            this.sale_qty_numericUpDown.TabIndex = 1;
-            this.sale_qty_numericUpDown.ValueChanged += new System.EventHandler(this.sale_qty_numericUpDown_ValueChanged);
+            this.numericSaleQty.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericSaleQty.Location = new System.Drawing.Point(707, 44);
+            this.numericSaleQty.Name = "numericSaleQty";
+            this.numericSaleQty.Size = new System.Drawing.Size(120, 31);
+            this.numericSaleQty.TabIndex = 1;
+            this.numericSaleQty.ValueChanged += new System.EventHandler(this.numericSaleQty_ValueChanged);
             // 
             // label11
             // 
@@ -200,44 +200,44 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.sale_remove_button);
-            this.panel2.Controls.Add(this.sale_addToList_button);
-            this.panel2.Controls.Add(this.sale_new_button);
+            this.panel2.Controls.Add(this.btnSaleRemoveFromList);
+            this.panel2.Controls.Add(this.btnSaleAddToList);
+            this.panel2.Controls.Add(this.btnSaleClearNew);
             this.panel2.Location = new System.Drawing.Point(274, 185);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(757, 77);
             this.panel2.TabIndex = 18;
             // 
-            // sale_remove_button
+            // btnSaleRemoveFromList
             // 
-            this.sale_remove_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_remove_button.Location = new System.Drawing.Point(490, 18);
-            this.sale_remove_button.Name = "sale_remove_button";
-            this.sale_remove_button.Size = new System.Drawing.Size(182, 41);
-            this.sale_remove_button.TabIndex = 6;
-            this.sale_remove_button.Text = "Remove From List";
-            this.sale_remove_button.UseVisualStyleBackColor = true;
-            this.sale_remove_button.Click += new System.EventHandler(this.sale_remove_button_Click);
+            this.btnSaleRemoveFromList.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaleRemoveFromList.Location = new System.Drawing.Point(490, 18);
+            this.btnSaleRemoveFromList.Name = "btnSaleRemoveFromList";
+            this.btnSaleRemoveFromList.Size = new System.Drawing.Size(182, 41);
+            this.btnSaleRemoveFromList.TabIndex = 6;
+            this.btnSaleRemoveFromList.Text = "Remove From List";
+            this.btnSaleRemoveFromList.UseVisualStyleBackColor = true;
+            this.btnSaleRemoveFromList.Click += new System.EventHandler(this.btnSaleRemoveFromList_Click);
             // 
-            // sale_addToList_button
+            // btnSaleAddToList
             // 
-            this.sale_addToList_button.Location = new System.Drawing.Point(296, 18);
-            this.sale_addToList_button.Name = "sale_addToList_button";
-            this.sale_addToList_button.Size = new System.Drawing.Size(136, 41);
-            this.sale_addToList_button.TabIndex = 5;
-            this.sale_addToList_button.Text = "Add To List";
-            this.sale_addToList_button.UseVisualStyleBackColor = true;
-            this.sale_addToList_button.Click += new System.EventHandler(this.sale_addToList_button_Click);
+            this.btnSaleAddToList.Location = new System.Drawing.Point(296, 18);
+            this.btnSaleAddToList.Name = "btnSaleAddToList";
+            this.btnSaleAddToList.Size = new System.Drawing.Size(136, 41);
+            this.btnSaleAddToList.TabIndex = 5;
+            this.btnSaleAddToList.Text = "Add To List";
+            this.btnSaleAddToList.UseVisualStyleBackColor = true;
+            this.btnSaleAddToList.Click += new System.EventHandler(this.btnSaleAddToList_Click);
             // 
-            // sale_new_button
+            // btnSaleClearNew
             // 
-            this.sale_new_button.Location = new System.Drawing.Point(96, 18);
-            this.sale_new_button.Name = "sale_new_button";
-            this.sale_new_button.Size = new System.Drawing.Size(136, 41);
-            this.sale_new_button.TabIndex = 4;
-            this.sale_new_button.Text = "New";
-            this.sale_new_button.UseVisualStyleBackColor = true;
-            this.sale_new_button.Click += new System.EventHandler(this.sale_new_button_Click);
+            this.btnSaleClearNew.Location = new System.Drawing.Point(96, 18);
+            this.btnSaleClearNew.Name = "btnSaleClearNew";
+            this.btnSaleClearNew.Size = new System.Drawing.Size(136, 41);
+            this.btnSaleClearNew.TabIndex = 4;
+            this.btnSaleClearNew.Text = "New";
+            this.btnSaleClearNew.UseVisualStyleBackColor = true;
+            this.btnSaleClearNew.Click += new System.EventHandler(this.btnSaleClearNew_Click);
             // 
             // label4
             // 
@@ -249,15 +249,15 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Unit Price :";
             // 
-            // sale_TotalPrice_Label
+            // lblSaleSumTotalPrice
             // 
-            this.sale_TotalPrice_Label.AutoSize = true;
-            this.sale_TotalPrice_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_TotalPrice_Label.Location = new System.Drawing.Point(949, 588);
-            this.sale_TotalPrice_Label.Name = "sale_TotalPrice_Label";
-            this.sale_TotalPrice_Label.Size = new System.Drawing.Size(47, 25);
-            this.sale_TotalPrice_Label.TabIndex = 29;
-            this.sale_TotalPrice_Label.Text = "0.00";
+            this.lblSaleSumTotalPrice.AutoSize = true;
+            this.lblSaleSumTotalPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaleSumTotalPrice.Location = new System.Drawing.Point(949, 588);
+            this.lblSaleSumTotalPrice.Name = "lblSaleSumTotalPrice";
+            this.lblSaleSumTotalPrice.Size = new System.Drawing.Size(47, 25);
+            this.lblSaleSumTotalPrice.TabIndex = 29;
+            this.lblSaleSumTotalPrice.Text = "0.00";
             // 
             // label5
             // 
@@ -279,11 +279,11 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Sales Date :";
             // 
-            // sale_dataGridView1
+            // dgvSalePurchaseList
             // 
-            this.sale_dataGridView1.AllowUserToAddRows = false;
-            this.sale_dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sale_dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSalePurchaseList.AllowUserToAddRows = false;
+            this.dgvSalePurchaseList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSalePurchaseList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column9,
             this.Column1,
             this.Column2,
@@ -291,11 +291,11 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.sale_dataGridView1.Location = new System.Drawing.Point(13, 304);
-            this.sale_dataGridView1.Name = "sale_dataGridView1";
-            this.sale_dataGridView1.RowTemplate.Height = 28;
-            this.sale_dataGridView1.Size = new System.Drawing.Size(1060, 272);
-            this.sale_dataGridView1.TabIndex = 25;
+            this.dgvSalePurchaseList.Location = new System.Drawing.Point(13, 304);
+            this.dgvSalePurchaseList.Name = "dgvSalePurchaseList";
+            this.dgvSalePurchaseList.RowTemplate.Height = 28;
+            this.dgvSalePurchaseList.Size = new System.Drawing.Size(1060, 272);
+            this.dgvSalePurchaseList.TabIndex = 25;
             // 
             // Column9
             // 
@@ -348,18 +348,18 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.sale_type_comboBox);
-            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.cboSaleType);
+            this.groupBox2.Controls.Add(this.lblProductId);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.sale_product_comboBox);
+            this.groupBox2.Controls.Add(this.cboSaleProductName);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.sale_totPrice_Label);
+            this.groupBox2.Controls.Add(this.lblSaleTotalPrice);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.sale__dateTimePicker);
+            this.groupBox2.Controls.Add(this.datePickerSaleDate);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.sale_price_textBox);
-            this.groupBox2.Controls.Add(this.sale_qty_numericUpDown);
+            this.groupBox2.Controls.Add(this.txtSaleUnitPrice);
+            this.groupBox2.Controls.Add(this.numericSaleQty);
             this.groupBox2.Controls.Add(this.panel2);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
@@ -370,38 +370,38 @@
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             // 
-            // sale_type_comboBox
+            // cboSaleType
             // 
-            this.sale_type_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sale_type_comboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_type_comboBox.FormattingEnabled = true;
-            this.sale_type_comboBox.Items.AddRange(new object[] {
+            this.cboSaleType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSaleType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSaleType.FormattingEnabled = true;
+            this.cboSaleType.Items.AddRange(new object[] {
             "Cash",
             "Contract"});
-            this.sale_type_comboBox.Location = new System.Drawing.Point(195, 143);
-            this.sale_type_comboBox.Name = "sale_type_comboBox";
-            this.sale_type_comboBox.Size = new System.Drawing.Size(291, 33);
-            this.sale_type_comboBox.TabIndex = 27;
+            this.cboSaleType.Location = new System.Drawing.Point(195, 143);
+            this.cboSaleType.Name = "cboSaleType";
+            this.cboSaleType.Size = new System.Drawing.Size(291, 33);
+            this.cboSaleType.TabIndex = 27;
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.sale_purchase_button);
+            this.panel1.Controls.Add(this.btnSalePurchase);
             this.panel1.Location = new System.Drawing.Point(805, 622);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(268, 72);
             this.panel1.TabIndex = 31;
             // 
-            // sale_purchase_button
+            // btnSalePurchase
             // 
-            this.sale_purchase_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sale_purchase_button.Location = new System.Drawing.Point(72, 11);
-            this.sale_purchase_button.Name = "sale_purchase_button";
-            this.sale_purchase_button.Size = new System.Drawing.Size(136, 42);
-            this.sale_purchase_button.TabIndex = 0;
-            this.sale_purchase_button.Text = "Purchase";
-            this.sale_purchase_button.UseVisualStyleBackColor = true;
-            this.sale_purchase_button.Click += new System.EventHandler(this.sale_purchase_button_Click);
+            this.btnSalePurchase.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalePurchase.Location = new System.Drawing.Point(72, 11);
+            this.btnSalePurchase.Name = "btnSalePurchase";
+            this.btnSalePurchase.Size = new System.Drawing.Size(136, 42);
+            this.btnSalePurchase.TabIndex = 0;
+            this.btnSalePurchase.Text = "Purchase";
+            this.btnSalePurchase.UseVisualStyleBackColor = true;
+            this.btnSalePurchase.Click += new System.EventHandler(this.btnSalePurchase_Click);
             // 
             // Sale
             // 
@@ -411,15 +411,15 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.sale_TotalPrice_Label);
-            this.Controls.Add(this.sale_dataGridView1);
+            this.Controls.Add(this.lblSaleSumTotalPrice);
+            this.Controls.Add(this.dgvSalePurchaseList);
             this.Controls.Add(this.groupBox2);
             this.Name = "Sale";
             this.Text = "Sale";
             this.Load += new System.EventHandler(this.Sale_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.sale_qty_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericSaleQty)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sale_dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSalePurchaseList)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -431,30 +431,30 @@
         #endregion
 
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox sale_product_comboBox;
+        private System.Windows.Forms.ComboBox cboSaleProductName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label sale_totPrice_Label;
+        private System.Windows.Forms.Label lblSaleTotalPrice;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblProductId;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DateTimePicker sale__dateTimePicker;
+        private System.Windows.Forms.DateTimePicker datePickerSaleDate;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox sale_price_textBox;
-        private System.Windows.Forms.NumericUpDown sale_qty_numericUpDown;
+        private System.Windows.Forms.TextBox txtSaleUnitPrice;
+        private System.Windows.Forms.NumericUpDown numericSaleQty;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button sale_addToList_button;
-        private System.Windows.Forms.Button sale_new_button;
+        private System.Windows.Forms.Button btnSaleAddToList;
+        private System.Windows.Forms.Button btnSaleClearNew;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label sale_TotalPrice_Label;
+        private System.Windows.Forms.Label lblSaleSumTotalPrice;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView sale_dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSalePurchaseList;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox sale_type_comboBox;
+        private System.Windows.Forms.ComboBox cboSaleType;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button sale_purchase_button;
+        private System.Windows.Forms.Button btnSalePurchase;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -462,6 +462,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Button sale_remove_button;
+        private System.Windows.Forms.Button btnSaleRemoveFromList;
     }
 }

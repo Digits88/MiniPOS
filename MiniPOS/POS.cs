@@ -61,5 +61,11 @@ namespace MiniPOS
             sales.StartPosition = FormStartPosition.CenterScreen;
             sales.Show();
         }
+
+        private void POS_Load(object sender, EventArgs e)
+        {
+            //here get the expiry dates of items
+            //and load it when the form is loaded
+        }
     }
 }

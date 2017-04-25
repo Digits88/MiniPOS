@@ -35,12 +35,11 @@
             this.productRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productSupplierMapToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.salesInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -97,28 +96,6 @@
             this.productSupplierMapToolStripMenuItem1.Text = "Product Supplier Map";
             this.productSupplierMapToolStripMenuItem1.Click += new System.EventHandler(this.productSupplierMapToolStripMenuItem1_Click);
             // 
-            // salesToolStripMenuItem
-            // 
-            this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salesInformationToolStripMenuItem,
-            this.salesDetailToolStripMenuItem});
-            this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
-            this.salesToolStripMenuItem.Size = new System.Drawing.Size(64, 29);
-            this.salesToolStripMenuItem.Text = "Sales";
-            // 
-            // salesInformationToolStripMenuItem
-            // 
-            this.salesInformationToolStripMenuItem.Name = "salesInformationToolStripMenuItem";
-            this.salesInformationToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
-            this.salesInformationToolStripMenuItem.Text = "Sales Information";
-            this.salesInformationToolStripMenuItem.Click += new System.EventHandler(this.salesInformationToolStripMenuItem_Click);
-            // 
-            // salesDetailToolStripMenuItem
-            // 
-            this.salesDetailToolStripMenuItem.Name = "salesDetailToolStripMenuItem";
-            this.salesDetailToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
-            this.salesDetailToolStripMenuItem.Text = "Sales Detail";
-            // 
             // statusStrip
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -137,6 +114,21 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(60, 25);
             this.toolStripStatusLabel.Text = "Status";
             // 
+            // salesInformationToolStripMenuItem
+            // 
+            this.salesInformationToolStripMenuItem.Name = "salesInformationToolStripMenuItem";
+            this.salesInformationToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
+            this.salesInformationToolStripMenuItem.Text = "Sales Information";
+            this.salesInformationToolStripMenuItem.Click += new System.EventHandler(this.salesInformationToolStripMenuItem_Click);
+            // 
+            // salesToolStripMenuItem
+            // 
+            this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salesInformationToolStripMenuItem});
+            this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
+            this.salesToolStripMenuItem.Size = new System.Drawing.Size(64, 29);
+            this.salesToolStripMenuItem.Text = "Sales";
+            // 
             // POS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -151,6 +143,7 @@
             this.Text = "POS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.POS_FormClosed);
+            this.Load += new System.EventHandler(this.POS_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
@@ -169,11 +162,10 @@
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productRegistrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supplierInformationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productSupplierMapToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem salesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salesInformationToolStripMenuItem;
     }
 }
 

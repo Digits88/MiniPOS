@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.username_textBox = new System.Windows.Forms.TextBox();
-            this.password_textBox = new System.Windows.Forms.TextBox();
-            this.Btn_ok = new System.Windows.Forms.Button();
-            this.Btn_exit = new System.Windows.Forms.Button();
-            this.forgetPass_linkLabel = new System.Windows.Forms.LinkLabel();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.linkForgetPass = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -57,67 +57,67 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Password :";
             // 
-            // username_textBox
+            // txtUsername
             // 
-            this.username_textBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.username_textBox.Location = new System.Drawing.Point(138, 52);
-            this.username_textBox.Name = "username_textBox";
-            this.username_textBox.Size = new System.Drawing.Size(326, 31);
-            this.username_textBox.TabIndex = 3;
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.Location = new System.Drawing.Point(138, 52);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(326, 31);
+            this.txtUsername.TabIndex = 3;
             // 
-            // password_textBox
+            // txtPassword
             // 
-            this.password_textBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.password_textBox.Location = new System.Drawing.Point(138, 100);
-            this.password_textBox.Name = "password_textBox";
-            this.password_textBox.PasswordChar = '.';
-            this.password_textBox.Size = new System.Drawing.Size(326, 31);
-            this.password_textBox.TabIndex = 4;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.Location = new System.Drawing.Point(138, 100);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '.';
+            this.txtPassword.Size = new System.Drawing.Size(326, 31);
+            this.txtPassword.TabIndex = 4;
             // 
-            // Btn_ok
+            // btnOk
             // 
-            this.Btn_ok.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Btn_ok.Location = new System.Drawing.Point(325, 161);
-            this.Btn_ok.Name = "Btn_ok";
-            this.Btn_ok.Size = new System.Drawing.Size(139, 44);
-            this.Btn_ok.TabIndex = 6;
-            this.Btn_ok.Text = "Ok";
-            this.Btn_ok.UseVisualStyleBackColor = true;
-            this.Btn_ok.Click += new System.EventHandler(this.Btn_ok_Click);
+            this.btnOk.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOk.Location = new System.Drawing.Point(325, 161);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(139, 44);
+            this.btnOk.TabIndex = 6;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // Btn_exit
+            // btnExit
             // 
-            this.Btn_exit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Btn_exit.Location = new System.Drawing.Point(138, 161);
-            this.Btn_exit.Name = "Btn_exit";
-            this.Btn_exit.Size = new System.Drawing.Size(139, 44);
-            this.Btn_exit.TabIndex = 7;
-            this.Btn_exit.Text = "Exit";
-            this.Btn_exit.UseVisualStyleBackColor = true;
-            this.Btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.Location = new System.Drawing.Point(138, 161);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(139, 44);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // forgetPass_linkLabel
+            // linkForgetPass
             // 
-            this.forgetPass_linkLabel.AutoSize = true;
-            this.forgetPass_linkLabel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.forgetPass_linkLabel.Location = new System.Drawing.Point(306, 233);
-            this.forgetPass_linkLabel.Name = "forgetPass_linkLabel";
-            this.forgetPass_linkLabel.Size = new System.Drawing.Size(152, 25);
-            this.forgetPass_linkLabel.TabIndex = 8;
-            this.forgetPass_linkLabel.TabStop = true;
-            this.forgetPass_linkLabel.Text = "Forget Password?";
+            this.linkForgetPass.AutoSize = true;
+            this.linkForgetPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.linkForgetPass.Location = new System.Drawing.Point(306, 233);
+            this.linkForgetPass.Name = "linkForgetPass";
+            this.linkForgetPass.Size = new System.Drawing.Size(152, 25);
+            this.linkForgetPass.TabIndex = 8;
+            this.linkForgetPass.TabStop = true;
+            this.linkForgetPass.Text = "Forget Password?";
             // 
             // Login
             // 
-            this.AcceptButton = this.Btn_ok;
+            this.AcceptButton = this.btnOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(516, 290);
-            this.Controls.Add(this.forgetPass_linkLabel);
-            this.Controls.Add(this.Btn_exit);
-            this.Controls.Add(this.Btn_ok);
-            this.Controls.Add(this.password_textBox);
-            this.Controls.Add(this.username_textBox);
+            this.Controls.Add(this.linkForgetPass);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
@@ -131,10 +131,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox username_textBox;
-        private System.Windows.Forms.TextBox password_textBox;
-        private System.Windows.Forms.Button Btn_ok;
-        private System.Windows.Forms.Button Btn_exit;
-        private System.Windows.Forms.LinkLabel forgetPass_linkLabel;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.LinkLabel linkForgetPass;
     }
 }

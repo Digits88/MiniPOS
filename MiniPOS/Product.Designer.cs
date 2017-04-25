@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ItemProdType_comboBox = new System.Windows.Forms.ComboBox();
+            this.cboItemProdType = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.item_new_button = new System.Windows.Forms.Button();
-            this.item_save_button = new System.Windows.Forms.Button();
-            this.itemProdName_textBox = new System.Windows.Forms.TextBox();
+            this.btnClearItemNew = new System.Windows.Forms.Button();
+            this.btnSaveNewItem = new System.Windows.Forms.Button();
+            this.txtItemProdName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.inv_delete_button = new System.Windows.Forms.Button();
-            this.inv_update_button = new System.Windows.Forms.Button();
+            this.btnInvDelete = new System.Windows.Forms.Button();
+            this.btnInvUpdate = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.inv_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerInvExpiry = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.inv_save_button = new System.Windows.Forms.Button();
-            this.inv_new_button = new System.Windows.Forms.Button();
-            this.inv_UPrice_textBox = new System.Windows.Forms.TextBox();
-            this.inv_Qty_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.inv_Product_comboBox = new System.Windows.Forms.ComboBox();
+            this.btnInvSave = new System.Windows.Forms.Button();
+            this.btnInvClearNew = new System.Windows.Forms.Button();
+            this.txtInvUnitPrice = new System.Windows.Forms.TextBox();
+            this.numericInvQty = new System.Windows.Forms.NumericUpDown();
+            this.cboInvProduct = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.inv_search_textBox = new System.Windows.Forms.TextBox();
-            this.inv_dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtInvSearch = new System.Windows.Forms.TextBox();
+            this.dgvInventory = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,15 +62,15 @@
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.inv_Qty_numericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inv_dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericInvQty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.ItemProdType_comboBox);
+            this.groupBox1.Controls.Add(this.cboItemProdType);
             this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.itemProdName_textBox);
+            this.groupBox1.Controls.Add(this.txtItemProdName);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,11 +80,11 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
-            // ItemProdType_comboBox
+            // cboItemProdType
             // 
-            this.ItemProdType_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ItemProdType_comboBox.FormattingEnabled = true;
-            this.ItemProdType_comboBox.Items.AddRange(new object[] {
+            this.cboItemProdType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboItemProdType.FormattingEnabled = true;
+            this.cboItemProdType.Items.AddRange(new object[] {
             "Milk - 1 Liter",
             "Milk - 2 Liter",
             "Pasturized Milk - 0.5 Liter",
@@ -95,48 +95,48 @@
             "Butter - 1 Kg",
             "Yoghurt - Small",
             "Yoghurt - Big"});
-            this.ItemProdType_comboBox.Location = new System.Drawing.Point(144, 94);
-            this.ItemProdType_comboBox.Name = "ItemProdType_comboBox";
-            this.ItemProdType_comboBox.Size = new System.Drawing.Size(235, 33);
-            this.ItemProdType_comboBox.TabIndex = 1;
+            this.cboItemProdType.Location = new System.Drawing.Point(144, 94);
+            this.cboItemProdType.Name = "cboItemProdType";
+            this.cboItemProdType.Size = new System.Drawing.Size(235, 33);
+            this.cboItemProdType.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.item_new_button);
-            this.panel1.Controls.Add(this.item_save_button);
+            this.panel1.Controls.Add(this.btnClearItemNew);
+            this.panel1.Controls.Add(this.btnSaveNewItem);
             this.panel1.Location = new System.Drawing.Point(6, 144);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(505, 85);
             this.panel1.TabIndex = 17;
             // 
-            // item_new_button
+            // btnClearItemNew
             // 
-            this.item_new_button.Location = new System.Drawing.Point(137, 20);
-            this.item_new_button.Name = "item_new_button";
-            this.item_new_button.Size = new System.Drawing.Size(136, 41);
-            this.item_new_button.TabIndex = 3;
-            this.item_new_button.Text = "New";
-            this.item_new_button.UseVisualStyleBackColor = true;
-            this.item_new_button.Click += new System.EventHandler(this.item_new_button_Click);
+            this.btnClearItemNew.Location = new System.Drawing.Point(137, 20);
+            this.btnClearItemNew.Name = "btnClearItemNew";
+            this.btnClearItemNew.Size = new System.Drawing.Size(136, 41);
+            this.btnClearItemNew.TabIndex = 3;
+            this.btnClearItemNew.Text = "New";
+            this.btnClearItemNew.UseVisualStyleBackColor = true;
+            this.btnClearItemNew.Click += new System.EventHandler(this.item_new_button_Click);
             // 
-            // item_save_button
+            // btnSaveNewItem
             // 
-            this.item_save_button.Location = new System.Drawing.Point(330, 20);
-            this.item_save_button.Name = "item_save_button";
-            this.item_save_button.Size = new System.Drawing.Size(136, 41);
-            this.item_save_button.TabIndex = 2;
-            this.item_save_button.Text = "Save";
-            this.item_save_button.UseVisualStyleBackColor = true;
-            this.item_save_button.Click += new System.EventHandler(this.item_save_button_Click);
+            this.btnSaveNewItem.Location = new System.Drawing.Point(330, 20);
+            this.btnSaveNewItem.Name = "btnSaveNewItem";
+            this.btnSaveNewItem.Size = new System.Drawing.Size(136, 41);
+            this.btnSaveNewItem.TabIndex = 2;
+            this.btnSaveNewItem.Text = "Save";
+            this.btnSaveNewItem.UseVisualStyleBackColor = true;
+            this.btnSaveNewItem.Click += new System.EventHandler(this.item_save_button_Click);
             // 
-            // itemProdName_textBox
+            // txtItemProdName
             // 
-            this.itemProdName_textBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemProdName_textBox.Location = new System.Drawing.Point(144, 41);
-            this.itemProdName_textBox.Name = "itemProdName_textBox";
-            this.itemProdName_textBox.Size = new System.Drawing.Size(329, 31);
-            this.itemProdName_textBox.TabIndex = 0;
+            this.txtItemProdName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtItemProdName.Location = new System.Drawing.Point(144, 41);
+            this.txtItemProdName.Name = "txtItemProdName";
+            this.txtItemProdName.Size = new System.Drawing.Size(329, 31);
+            this.txtItemProdName.TabIndex = 0;
             // 
             // label1
             // 
@@ -158,35 +158,35 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Product Type :";
             // 
-            // inv_delete_button
+            // btnInvDelete
             // 
-            this.inv_delete_button.Location = new System.Drawing.Point(14, 179);
-            this.inv_delete_button.Name = "inv_delete_button";
-            this.inv_delete_button.Size = new System.Drawing.Size(136, 41);
-            this.inv_delete_button.TabIndex = 10;
-            this.inv_delete_button.Text = "Delete";
-            this.inv_delete_button.UseVisualStyleBackColor = true;
-            this.inv_delete_button.Click += new System.EventHandler(this.inv_delete_button_Click);
+            this.btnInvDelete.Location = new System.Drawing.Point(14, 179);
+            this.btnInvDelete.Name = "btnInvDelete";
+            this.btnInvDelete.Size = new System.Drawing.Size(136, 41);
+            this.btnInvDelete.TabIndex = 10;
+            this.btnInvDelete.Text = "Delete";
+            this.btnInvDelete.UseVisualStyleBackColor = true;
+            this.btnInvDelete.Click += new System.EventHandler(this.btnInvDelete_Click);
             // 
-            // inv_update_button
+            // btnInvUpdate
             // 
-            this.inv_update_button.Location = new System.Drawing.Point(14, 121);
-            this.inv_update_button.Name = "inv_update_button";
-            this.inv_update_button.Size = new System.Drawing.Size(136, 41);
-            this.inv_update_button.TabIndex = 9;
-            this.inv_update_button.Text = "Update";
-            this.inv_update_button.UseVisualStyleBackColor = true;
-            this.inv_update_button.Click += new System.EventHandler(this.inv_update_button_Click);
+            this.btnInvUpdate.Location = new System.Drawing.Point(14, 121);
+            this.btnInvUpdate.Name = "btnInvUpdate";
+            this.btnInvUpdate.Size = new System.Drawing.Size(136, 41);
+            this.btnInvUpdate.TabIndex = 9;
+            this.btnInvUpdate.Text = "Update";
+            this.btnInvUpdate.UseVisualStyleBackColor = true;
+            this.btnInvUpdate.Click += new System.EventHandler(this.btnInvUpdate_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.inv_dateTimePicker);
+            this.groupBox2.Controls.Add(this.dateTimePickerInvExpiry);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.panel2);
-            this.groupBox2.Controls.Add(this.inv_UPrice_textBox);
-            this.groupBox2.Controls.Add(this.inv_Qty_numericUpDown);
-            this.groupBox2.Controls.Add(this.inv_Product_comboBox);
+            this.groupBox2.Controls.Add(this.txtInvUnitPrice);
+            this.groupBox2.Controls.Add(this.numericInvQty);
+            this.groupBox2.Controls.Add(this.cboInvProduct);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
@@ -205,13 +205,13 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "ETB";
             // 
-            // inv_dateTimePicker
+            // dateTimePickerInvExpiry
             // 
-            this.inv_dateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inv_dateTimePicker.Location = new System.Drawing.Point(119, 93);
-            this.inv_dateTimePicker.Name = "inv_dateTimePicker";
-            this.inv_dateTimePicker.Size = new System.Drawing.Size(270, 31);
-            this.inv_dateTimePicker.TabIndex = 20;
+            this.dateTimePickerInvExpiry.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerInvExpiry.Location = new System.Drawing.Point(119, 93);
+            this.dateTimePickerInvExpiry.Name = "dateTimePickerInvExpiry";
+            this.dateTimePickerInvExpiry.Size = new System.Drawing.Size(270, 31);
+            this.dateTimePickerInvExpiry.TabIndex = 20;
             // 
             // label6
             // 
@@ -226,62 +226,62 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.inv_save_button);
-            this.panel2.Controls.Add(this.inv_new_button);
-            this.panel2.Controls.Add(this.inv_update_button);
-            this.panel2.Controls.Add(this.inv_delete_button);
+            this.panel2.Controls.Add(this.btnInvSave);
+            this.panel2.Controls.Add(this.btnInvClearNew);
+            this.panel2.Controls.Add(this.btnInvUpdate);
+            this.panel2.Controls.Add(this.btnInvDelete);
             this.panel2.Location = new System.Drawing.Point(407, 16);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(165, 239);
             this.panel2.TabIndex = 18;
             // 
-            // inv_save_button
+            // btnInvSave
             // 
-            this.inv_save_button.Location = new System.Drawing.Point(14, 63);
-            this.inv_save_button.Name = "inv_save_button";
-            this.inv_save_button.Size = new System.Drawing.Size(136, 41);
-            this.inv_save_button.TabIndex = 8;
-            this.inv_save_button.Text = "Save";
-            this.inv_save_button.UseVisualStyleBackColor = true;
-            this.inv_save_button.Click += new System.EventHandler(this.inv_save_button_Click);
+            this.btnInvSave.Location = new System.Drawing.Point(14, 63);
+            this.btnInvSave.Name = "btnInvSave";
+            this.btnInvSave.Size = new System.Drawing.Size(136, 41);
+            this.btnInvSave.TabIndex = 8;
+            this.btnInvSave.Text = "Save";
+            this.btnInvSave.UseVisualStyleBackColor = true;
+            this.btnInvSave.Click += new System.EventHandler(this.btnInvSave_Click);
             // 
-            // inv_new_button
+            // btnInvClearNew
             // 
-            this.inv_new_button.Location = new System.Drawing.Point(14, 7);
-            this.inv_new_button.Name = "inv_new_button";
-            this.inv_new_button.Size = new System.Drawing.Size(136, 41);
-            this.inv_new_button.TabIndex = 7;
-            this.inv_new_button.Text = "New";
-            this.inv_new_button.UseVisualStyleBackColor = true;
-            this.inv_new_button.Click += new System.EventHandler(this.inv_new_button_Click);
+            this.btnInvClearNew.Location = new System.Drawing.Point(14, 7);
+            this.btnInvClearNew.Name = "btnInvClearNew";
+            this.btnInvClearNew.Size = new System.Drawing.Size(136, 41);
+            this.btnInvClearNew.TabIndex = 7;
+            this.btnInvClearNew.Text = "New";
+            this.btnInvClearNew.UseVisualStyleBackColor = true;
+            this.btnInvClearNew.Click += new System.EventHandler(this.btnInvClearNew_Click);
             // 
-            // inv_UPrice_textBox
+            // txtInvUnitPrice
             // 
-            this.inv_UPrice_textBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inv_UPrice_textBox.Location = new System.Drawing.Point(119, 195);
-            this.inv_UPrice_textBox.Name = "inv_UPrice_textBox";
-            this.inv_UPrice_textBox.Size = new System.Drawing.Size(120, 31);
-            this.inv_UPrice_textBox.TabIndex = 6;
-            this.inv_UPrice_textBox.Text = "0.00";
-            this.inv_UPrice_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtInvUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInvUnitPrice.Location = new System.Drawing.Point(119, 195);
+            this.txtInvUnitPrice.Name = "txtInvUnitPrice";
+            this.txtInvUnitPrice.Size = new System.Drawing.Size(120, 31);
+            this.txtInvUnitPrice.TabIndex = 6;
+            this.txtInvUnitPrice.Text = "0.00";
+            this.txtInvUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // inv_Qty_numericUpDown
+            // numericInvQty
             // 
-            this.inv_Qty_numericUpDown.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inv_Qty_numericUpDown.Location = new System.Drawing.Point(119, 148);
-            this.inv_Qty_numericUpDown.Name = "inv_Qty_numericUpDown";
-            this.inv_Qty_numericUpDown.Size = new System.Drawing.Size(120, 31);
-            this.inv_Qty_numericUpDown.TabIndex = 5;
+            this.numericInvQty.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericInvQty.Location = new System.Drawing.Point(119, 148);
+            this.numericInvQty.Name = "numericInvQty";
+            this.numericInvQty.Size = new System.Drawing.Size(120, 31);
+            this.numericInvQty.TabIndex = 5;
             // 
-            // inv_Product_comboBox
+            // cboInvProduct
             // 
-            this.inv_Product_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.inv_Product_comboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inv_Product_comboBox.FormattingEnabled = true;
-            this.inv_Product_comboBox.Location = new System.Drawing.Point(119, 41);
-            this.inv_Product_comboBox.Name = "inv_Product_comboBox";
-            this.inv_Product_comboBox.Size = new System.Drawing.Size(270, 33);
-            this.inv_Product_comboBox.TabIndex = 4;
+            this.cboInvProduct.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboInvProduct.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboInvProduct.FormattingEnabled = true;
+            this.cboInvProduct.Location = new System.Drawing.Point(119, 41);
+            this.cboInvProduct.Name = "cboInvProduct";
+            this.cboInvProduct.Size = new System.Drawing.Size(270, 33);
+            this.cboInvProduct.TabIndex = 4;
             // 
             // label5
             // 
@@ -313,32 +313,32 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Product :";
             // 
-            // inv_search_textBox
+            // txtInvSearch
             // 
-            this.inv_search_textBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inv_search_textBox.Location = new System.Drawing.Point(807, 292);
-            this.inv_search_textBox.Name = "inv_search_textBox";
-            this.inv_search_textBox.ReadOnly = true;
-            this.inv_search_textBox.Size = new System.Drawing.Size(330, 31);
-            this.inv_search_textBox.TabIndex = 11;
-            this.inv_search_textBox.TextChanged += new System.EventHandler(this.inv_search_textBox_TextChanged);
+            this.txtInvSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInvSearch.Location = new System.Drawing.Point(807, 292);
+            this.txtInvSearch.Name = "txtInvSearch";
+            this.txtInvSearch.ReadOnly = true;
+            this.txtInvSearch.Size = new System.Drawing.Size(330, 31);
+            this.txtInvSearch.TabIndex = 11;
+            this.txtInvSearch.TextChanged += new System.EventHandler(this.txtInvSearch_TextChanged);
             // 
-            // inv_dataGridView1
+            // dgvInventory
             // 
-            this.inv_dataGridView1.AllowUserToAddRows = false;
-            this.inv_dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.inv_dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvInventory.AllowUserToAddRows = false;
+            this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.inv_dataGridView1.Location = new System.Drawing.Point(12, 338);
-            this.inv_dataGridView1.Name = "inv_dataGridView1";
-            this.inv_dataGridView1.RowTemplate.Height = 28;
-            this.inv_dataGridView1.Size = new System.Drawing.Size(1125, 268);
-            this.inv_dataGridView1.TabIndex = 16;
-            this.inv_dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.inv_dataGridView1_MouseClick);
+            this.dgvInventory.Location = new System.Drawing.Point(12, 338);
+            this.dgvInventory.Name = "dgvInventory";
+            this.dgvInventory.RowTemplate.Height = 28;
+            this.dgvInventory.Size = new System.Drawing.Size(1125, 268);
+            this.dgvInventory.TabIndex = 16;
+            this.dgvInventory.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvInventory_MouseClick);
             // 
             // Column1
             // 
@@ -380,8 +380,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 609);
-            this.Controls.Add(this.inv_search_textBox);
-            this.Controls.Add(this.inv_dataGridView1);
+            this.Controls.Add(this.txtInvSearch);
+            this.Controls.Add(this.dgvInventory);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Product";
@@ -393,8 +393,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.inv_Qty_numericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inv_dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericInvQty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,28 +404,28 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button inv_delete_button;
-        private System.Windows.Forms.Button item_new_button;
-        private System.Windows.Forms.Button item_save_button;
-        private System.Windows.Forms.Button inv_update_button;
-        private System.Windows.Forms.TextBox itemProdName_textBox;
+        private System.Windows.Forms.Button btnInvDelete;
+        private System.Windows.Forms.Button btnClearItemNew;
+        private System.Windows.Forms.Button btnSaveNewItem;
+        private System.Windows.Forms.Button btnInvUpdate;
+        private System.Windows.Forms.TextBox txtItemProdName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox ItemProdType_comboBox;
+        private System.Windows.Forms.ComboBox cboItemProdType;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button inv_save_button;
-        private System.Windows.Forms.Button inv_new_button;
-        private System.Windows.Forms.TextBox inv_UPrice_textBox;
-        private System.Windows.Forms.NumericUpDown inv_Qty_numericUpDown;
-        private System.Windows.Forms.ComboBox inv_Product_comboBox;
+        private System.Windows.Forms.Button btnInvSave;
+        private System.Windows.Forms.Button btnInvClearNew;
+        private System.Windows.Forms.TextBox txtInvUnitPrice;
+        private System.Windows.Forms.NumericUpDown numericInvQty;
+        private System.Windows.Forms.ComboBox cboInvProduct;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox inv_search_textBox;
-        private System.Windows.Forms.DataGridView inv_dataGridView1;
+        private System.Windows.Forms.TextBox txtInvSearch;
+        private System.Windows.Forms.DataGridView dgvInventory;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker inv_dateTimePicker;
+        private System.Windows.Forms.DateTimePicker dateTimePickerInvExpiry;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

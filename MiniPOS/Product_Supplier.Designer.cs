@@ -29,35 +29,27 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.prMap_prod_textBox = new System.Windows.Forms.TextBox();
+            this.lblSupplierId = new System.Windows.Forms.Label();
+            this.txtProdMapProduct = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.prMap_supp_comboBox = new System.Windows.Forms.ComboBox();
+            this.cboProdMapSupplierName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.prMap_totPrice_Label = new System.Windows.Forms.Label();
+            this.lblProdMapTotalPrice = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.prMap_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerProdMap = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.prMap_Price_textBox = new System.Windows.Forms.TextBox();
-            this.prMap_Qty_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.txtProdMapGivenPrice = new System.Windows.Forms.TextBox();
+            this.numericProdMapQty = new System.Windows.Forms.NumericUpDown();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.prMap_save_button = new System.Windows.Forms.Button();
-            this.prMap_new_button = new System.Windows.Forms.Button();
-            this.prMap_update_button = new System.Windows.Forms.Button();
-            this.prMap_delete_button = new System.Windows.Forms.Button();
+            this.btnProdMapSaveNewInfo = new System.Windows.Forms.Button();
+            this.btnProdMapClearForm = new System.Windows.Forms.Button();
+            this.btnProdMapUpdateInfo = new System.Windows.Forms.Button();
+            this.btnProdMapDeleteInfo = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.prMap_dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.PrMap_search_dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.PrMap_search_supplier = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.Pr_Map_TotalPrice_Label = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.dgvProdMapInformation = new System.Windows.Forms.DataGridView();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,27 +59,35 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datePickerProdMapByDate = new System.Windows.Forms.DateTimePicker();
+            this.cboProdMapSearchSupplier = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblProdMapSumTotalPrice = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prMap_Qty_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericProdMapQty)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prMap_dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdMapInformation)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.prMap_prod_textBox);
+            this.groupBox2.Controls.Add(this.lblSupplierId);
+            this.groupBox2.Controls.Add(this.txtProdMapProduct);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.prMap_supp_comboBox);
+            this.groupBox2.Controls.Add(this.cboProdMapSupplierName);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.prMap_totPrice_Label);
+            this.groupBox2.Controls.Add(this.lblProdMapTotalPrice);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.prMap_dateTimePicker);
+            this.groupBox2.Controls.Add(this.dateTimePickerProdMap);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.prMap_Price_textBox);
-            this.groupBox2.Controls.Add(this.prMap_Qty_numericUpDown);
+            this.groupBox2.Controls.Add(this.txtProdMapGivenPrice);
+            this.groupBox2.Controls.Add(this.numericProdMapQty);
             this.groupBox2.Controls.Add(this.panel2);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
@@ -98,15 +98,24 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             // 
-            // prMap_prod_textBox
+            // lblSupplierId
             // 
-            this.prMap_prod_textBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prMap_prod_textBox.Location = new System.Drawing.Point(195, 140);
-            this.prMap_prod_textBox.Name = "prMap_prod_textBox";
-            this.prMap_prod_textBox.ReadOnly = true;
-            this.prMap_prod_textBox.Size = new System.Drawing.Size(207, 31);
-            this.prMap_prod_textBox.TabIndex = 25;
-            this.prMap_prod_textBox.Text = "Milk";
+            this.lblSupplierId.AutoSize = true;
+            this.lblSupplierId.Location = new System.Drawing.Point(200, 20);
+            this.lblSupplierId.Name = "lblSupplierId";
+            this.lblSupplierId.Size = new System.Drawing.Size(60, 20);
+            this.lblSupplierId.TabIndex = 26;
+            this.lblSupplierId.Text = "label13";
+            // 
+            // txtProdMapProduct
+            // 
+            this.txtProdMapProduct.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProdMapProduct.Location = new System.Drawing.Point(195, 140);
+            this.txtProdMapProduct.Name = "txtProdMapProduct";
+            this.txtProdMapProduct.ReadOnly = true;
+            this.txtProdMapProduct.Size = new System.Drawing.Size(207, 31);
+            this.txtProdMapProduct.TabIndex = 25;
+            this.txtProdMapProduct.Text = "Milk";
             // 
             // label8
             // 
@@ -118,15 +127,15 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "Product :";
             // 
-            // prMap_supp_comboBox
+            // cboProdMapSupplierName
             // 
-            this.prMap_supp_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.prMap_supp_comboBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prMap_supp_comboBox.FormattingEnabled = true;
-            this.prMap_supp_comboBox.Location = new System.Drawing.Point(195, 43);
-            this.prMap_supp_comboBox.Name = "prMap_supp_comboBox";
-            this.prMap_supp_comboBox.Size = new System.Drawing.Size(291, 33);
-            this.prMap_supp_comboBox.TabIndex = 18;
+            this.cboProdMapSupplierName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboProdMapSupplierName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboProdMapSupplierName.FormattingEnabled = true;
+            this.cboProdMapSupplierName.Location = new System.Drawing.Point(195, 43);
+            this.cboProdMapSupplierName.Name = "cboProdMapSupplierName";
+            this.cboProdMapSupplierName.Size = new System.Drawing.Size(291, 33);
+            this.cboProdMapSupplierName.TabIndex = 18;
             // 
             // label1
             // 
@@ -148,15 +157,15 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "ETB";
             // 
-            // prMap_totPrice_Label
+            // lblProdMapTotalPrice
             // 
-            this.prMap_totPrice_Label.AutoSize = true;
-            this.prMap_totPrice_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prMap_totPrice_Label.Location = new System.Drawing.Point(707, 143);
-            this.prMap_totPrice_Label.Name = "prMap_totPrice_Label";
-            this.prMap_totPrice_Label.Size = new System.Drawing.Size(47, 25);
-            this.prMap_totPrice_Label.TabIndex = 3;
-            this.prMap_totPrice_Label.Text = "0.00";
+            this.lblProdMapTotalPrice.AutoSize = true;
+            this.lblProdMapTotalPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProdMapTotalPrice.Location = new System.Drawing.Point(707, 143);
+            this.lblProdMapTotalPrice.Name = "lblProdMapTotalPrice";
+            this.lblProdMapTotalPrice.Size = new System.Drawing.Size(47, 25);
+            this.lblProdMapTotalPrice.TabIndex = 3;
+            this.lblProdMapTotalPrice.Text = "0.00";
             // 
             // label7
             // 
@@ -167,14 +176,14 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "ETB";
             // 
-            // prMap_dateTimePicker
+            // dateTimePickerProdMap
             // 
-            this.prMap_dateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prMap_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.prMap_dateTimePicker.Location = new System.Drawing.Point(195, 93);
-            this.prMap_dateTimePicker.Name = "prMap_dateTimePicker";
-            this.prMap_dateTimePicker.Size = new System.Drawing.Size(291, 31);
-            this.prMap_dateTimePicker.TabIndex = 0;
+            this.dateTimePickerProdMap.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerProdMap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerProdMap.Location = new System.Drawing.Point(195, 93);
+            this.dateTimePickerProdMap.Name = "dateTimePickerProdMap";
+            this.dateTimePickerProdMap.Size = new System.Drawing.Size(291, 31);
+            this.dateTimePickerProdMap.TabIndex = 0;
             // 
             // label6
             // 
@@ -186,77 +195,77 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Total Amount(Liters) :";
             // 
-            // prMap_Price_textBox
+            // txtProdMapGivenPrice
             // 
-            this.prMap_Price_textBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prMap_Price_textBox.Location = new System.Drawing.Point(707, 95);
-            this.prMap_Price_textBox.Name = "prMap_Price_textBox";
-            this.prMap_Price_textBox.Size = new System.Drawing.Size(120, 31);
-            this.prMap_Price_textBox.TabIndex = 2;
-            this.prMap_Price_textBox.Text = "0.00";
-            this.prMap_Price_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.prMap_Price_textBox.TextChanged += new System.EventHandler(this.prMap_Price_textBox_TextChanged);
+            this.txtProdMapGivenPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProdMapGivenPrice.Location = new System.Drawing.Point(707, 95);
+            this.txtProdMapGivenPrice.Name = "txtProdMapGivenPrice";
+            this.txtProdMapGivenPrice.Size = new System.Drawing.Size(120, 31);
+            this.txtProdMapGivenPrice.TabIndex = 2;
+            this.txtProdMapGivenPrice.Text = "0.00";
+            this.txtProdMapGivenPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtProdMapGivenPrice.TextChanged += new System.EventHandler(this.txtProdMapGivenPrice_TextChanged);
             // 
-            // prMap_Qty_numericUpDown
+            // numericProdMapQty
             // 
-            this.prMap_Qty_numericUpDown.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prMap_Qty_numericUpDown.Location = new System.Drawing.Point(707, 44);
-            this.prMap_Qty_numericUpDown.Name = "prMap_Qty_numericUpDown";
-            this.prMap_Qty_numericUpDown.Size = new System.Drawing.Size(120, 31);
-            this.prMap_Qty_numericUpDown.TabIndex = 1;
-            this.prMap_Qty_numericUpDown.ValueChanged += new System.EventHandler(this.prMap_Qty_numericUpDown_ValueChanged);
+            this.numericProdMapQty.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericProdMapQty.Location = new System.Drawing.Point(707, 44);
+            this.numericProdMapQty.Name = "numericProdMapQty";
+            this.numericProdMapQty.Size = new System.Drawing.Size(120, 31);
+            this.numericProdMapQty.TabIndex = 1;
+            this.numericProdMapQty.ValueChanged += new System.EventHandler(this.numericProdMapQty_ValueChanged);
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.prMap_save_button);
-            this.panel2.Controls.Add(this.prMap_new_button);
-            this.panel2.Controls.Add(this.prMap_update_button);
-            this.panel2.Controls.Add(this.prMap_delete_button);
+            this.panel2.Controls.Add(this.btnProdMapSaveNewInfo);
+            this.panel2.Controls.Add(this.btnProdMapClearForm);
+            this.panel2.Controls.Add(this.btnProdMapUpdateInfo);
+            this.panel2.Controls.Add(this.btnProdMapDeleteInfo);
             this.panel2.Location = new System.Drawing.Point(136, 194);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(866, 77);
             this.panel2.TabIndex = 18;
             // 
-            // prMap_save_button
+            // btnProdMapSaveNewInfo
             // 
-            this.prMap_save_button.Location = new System.Drawing.Point(317, 17);
-            this.prMap_save_button.Name = "prMap_save_button";
-            this.prMap_save_button.Size = new System.Drawing.Size(136, 41);
-            this.prMap_save_button.TabIndex = 5;
-            this.prMap_save_button.Text = "Save";
-            this.prMap_save_button.UseVisualStyleBackColor = true;
-            this.prMap_save_button.Click += new System.EventHandler(this.prMap_save_button_Click);
+            this.btnProdMapSaveNewInfo.Location = new System.Drawing.Point(317, 17);
+            this.btnProdMapSaveNewInfo.Name = "btnProdMapSaveNewInfo";
+            this.btnProdMapSaveNewInfo.Size = new System.Drawing.Size(136, 41);
+            this.btnProdMapSaveNewInfo.TabIndex = 5;
+            this.btnProdMapSaveNewInfo.Text = "Save";
+            this.btnProdMapSaveNewInfo.UseVisualStyleBackColor = true;
+            this.btnProdMapSaveNewInfo.Click += new System.EventHandler(this.btnProdMapSaveNewInfo_Click);
             // 
-            // prMap_new_button
+            // btnProdMapClearForm
             // 
-            this.prMap_new_button.Location = new System.Drawing.Point(117, 17);
-            this.prMap_new_button.Name = "prMap_new_button";
-            this.prMap_new_button.Size = new System.Drawing.Size(136, 41);
-            this.prMap_new_button.TabIndex = 4;
-            this.prMap_new_button.Text = "New";
-            this.prMap_new_button.UseVisualStyleBackColor = true;
-            this.prMap_new_button.Click += new System.EventHandler(this.prMap_new_button_Click);
+            this.btnProdMapClearForm.Location = new System.Drawing.Point(117, 17);
+            this.btnProdMapClearForm.Name = "btnProdMapClearForm";
+            this.btnProdMapClearForm.Size = new System.Drawing.Size(136, 41);
+            this.btnProdMapClearForm.TabIndex = 4;
+            this.btnProdMapClearForm.Text = "New";
+            this.btnProdMapClearForm.UseVisualStyleBackColor = true;
+            this.btnProdMapClearForm.Click += new System.EventHandler(this.btnProdMapClearForm_Click);
             // 
-            // prMap_update_button
+            // btnProdMapUpdateInfo
             // 
-            this.prMap_update_button.Location = new System.Drawing.Point(508, 17);
-            this.prMap_update_button.Name = "prMap_update_button";
-            this.prMap_update_button.Size = new System.Drawing.Size(136, 41);
-            this.prMap_update_button.TabIndex = 6;
-            this.prMap_update_button.Text = "Update";
-            this.prMap_update_button.UseVisualStyleBackColor = true;
-            this.prMap_update_button.Click += new System.EventHandler(this.prMap_update_button_Click);
+            this.btnProdMapUpdateInfo.Location = new System.Drawing.Point(508, 17);
+            this.btnProdMapUpdateInfo.Name = "btnProdMapUpdateInfo";
+            this.btnProdMapUpdateInfo.Size = new System.Drawing.Size(136, 41);
+            this.btnProdMapUpdateInfo.TabIndex = 6;
+            this.btnProdMapUpdateInfo.Text = "Update";
+            this.btnProdMapUpdateInfo.UseVisualStyleBackColor = true;
+            this.btnProdMapUpdateInfo.Click += new System.EventHandler(this.btnProdMapUpdateInfo_Click);
             // 
-            // prMap_delete_button
+            // btnProdMapDeleteInfo
             // 
-            this.prMap_delete_button.Location = new System.Drawing.Point(701, 17);
-            this.prMap_delete_button.Name = "prMap_delete_button";
-            this.prMap_delete_button.Size = new System.Drawing.Size(136, 41);
-            this.prMap_delete_button.TabIndex = 7;
-            this.prMap_delete_button.Text = "Delete";
-            this.prMap_delete_button.UseVisualStyleBackColor = true;
-            this.prMap_delete_button.Click += new System.EventHandler(this.prMap_delete_button_Click);
+            this.btnProdMapDeleteInfo.Location = new System.Drawing.Point(701, 17);
+            this.btnProdMapDeleteInfo.Name = "btnProdMapDeleteInfo";
+            this.btnProdMapDeleteInfo.Size = new System.Drawing.Size(136, 41);
+            this.btnProdMapDeleteInfo.TabIndex = 7;
+            this.btnProdMapDeleteInfo.Text = "Delete";
+            this.btnProdMapDeleteInfo.UseVisualStyleBackColor = true;
+            this.btnProdMapDeleteInfo.Click += new System.EventHandler(this.btnProdMapDeleteInfo_Click);
             // 
             // label5
             // 
@@ -288,11 +297,11 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Entry Date :";
             // 
-            // prMap_dataGridView1
+            // dgvProdMapInformation
             // 
-            this.prMap_dataGridView1.AllowUserToAddRows = false;
-            this.prMap_dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.prMap_dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProdMapInformation.AllowUserToAddRows = false;
+            this.dgvProdMapInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProdMapInformation.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column9,
             this.Column1,
             this.Column2,
@@ -302,104 +311,12 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.prMap_dataGridView1.Location = new System.Drawing.Point(13, 365);
-            this.prMap_dataGridView1.Name = "prMap_dataGridView1";
-            this.prMap_dataGridView1.RowTemplate.Height = 28;
-            this.prMap_dataGridView1.Size = new System.Drawing.Size(1020, 272);
-            this.prMap_dataGridView1.TabIndex = 9;
-            this.prMap_dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.prMap_dataGridView1_MouseClick);
-            // 
-            // PrMap_search_dateTimePicker
-            // 
-            this.PrMap_search_dateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrMap_search_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.PrMap_search_dateTimePicker.Location = new System.Drawing.Point(671, 11);
-            this.PrMap_search_dateTimePicker.Name = "PrMap_search_dateTimePicker";
-            this.PrMap_search_dateTimePicker.Size = new System.Drawing.Size(301, 31);
-            this.PrMap_search_dateTimePicker.TabIndex = 17;
-            this.PrMap_search_dateTimePicker.ValueChanged += new System.EventHandler(this.PrMap_search_dateTimePicker_ValueChanged);
-            // 
-            // PrMap_search_supplier
-            // 
-            this.PrMap_search_supplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PrMap_search_supplier.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrMap_search_supplier.FormattingEnabled = true;
-            this.PrMap_search_supplier.Location = new System.Drawing.Point(193, 11);
-            this.PrMap_search_supplier.Name = "PrMap_search_supplier";
-            this.PrMap_search_supplier.Size = new System.Drawing.Size(295, 33);
-            this.PrMap_search_supplier.TabIndex = 18;
-            this.PrMap_search_supplier.SelectedIndexChanged += new System.EventHandler(this.PrMap_search_supplier_SelectedIndexChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(27, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 25);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "By Supplier Name :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(583, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 25);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "By Date :";
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.PrMap_search_dateTimePicker);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.PrMap_search_supplier);
-            this.panel3.Location = new System.Drawing.Point(13, 298);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1020, 62);
-            this.panel3.TabIndex = 21;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(770, 640);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(106, 25);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Sum Total :";
-            // 
-            // Pr_Map_TotalPrice_Label
-            // 
-            this.Pr_Map_TotalPrice_Label.AutoSize = true;
-            this.Pr_Map_TotalPrice_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pr_Map_TotalPrice_Label.Location = new System.Drawing.Point(909, 640);
-            this.Pr_Map_TotalPrice_Label.Name = "Pr_Map_TotalPrice_Label";
-            this.Pr_Map_TotalPrice_Label.Size = new System.Drawing.Size(47, 25);
-            this.Pr_Map_TotalPrice_Label.TabIndex = 23;
-            this.Pr_Map_TotalPrice_Label.Text = "0.00";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(984, 640);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 25);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "ETB";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(200, 20);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 20);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "label13";
+            this.dgvProdMapInformation.Location = new System.Drawing.Point(13, 365);
+            this.dgvProdMapInformation.Name = "dgvProdMapInformation";
+            this.dgvProdMapInformation.RowTemplate.Height = 28;
+            this.dgvProdMapInformation.Size = new System.Drawing.Size(1020, 272);
+            this.dgvProdMapInformation.TabIndex = 9;
+            this.dgvProdMapInformation.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvProdMapInformation_MouseClick);
             // 
             // Column9
             // 
@@ -464,25 +381,108 @@
             this.Column8.HeaderText = "Total";
             this.Column8.Name = "Column8";
             // 
+            // datePickerProdMapByDate
+            // 
+            this.datePickerProdMapByDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datePickerProdMapByDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datePickerProdMapByDate.Location = new System.Drawing.Point(671, 11);
+            this.datePickerProdMapByDate.Name = "datePickerProdMapByDate";
+            this.datePickerProdMapByDate.Size = new System.Drawing.Size(301, 31);
+            this.datePickerProdMapByDate.TabIndex = 17;
+            this.datePickerProdMapByDate.ValueChanged += new System.EventHandler(this.datePickerProdMapByDate_ValueChanged);
+            // 
+            // cboProdMapSearchSupplier
+            // 
+            this.cboProdMapSearchSupplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboProdMapSearchSupplier.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboProdMapSearchSupplier.FormattingEnabled = true;
+            this.cboProdMapSearchSupplier.Location = new System.Drawing.Point(193, 11);
+            this.cboProdMapSearchSupplier.Name = "cboProdMapSearchSupplier";
+            this.cboProdMapSearchSupplier.Size = new System.Drawing.Size(295, 33);
+            this.cboProdMapSearchSupplier.TabIndex = 18;
+            this.cboProdMapSearchSupplier.SelectedIndexChanged += new System.EventHandler(this.cboProdMapSearchSupplier_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(27, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(162, 25);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "By Supplier Name :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(583, 16);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 25);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "By Date :";
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.datePickerProdMapByDate);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.cboProdMapSearchSupplier);
+            this.panel3.Location = new System.Drawing.Point(13, 298);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1020, 62);
+            this.panel3.TabIndex = 21;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(770, 640);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(106, 25);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Sum Total :";
+            // 
+            // lblProdMapSumTotalPrice
+            // 
+            this.lblProdMapSumTotalPrice.AutoSize = true;
+            this.lblProdMapSumTotalPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProdMapSumTotalPrice.Location = new System.Drawing.Point(909, 640);
+            this.lblProdMapSumTotalPrice.Name = "lblProdMapSumTotalPrice";
+            this.lblProdMapSumTotalPrice.Size = new System.Drawing.Size(47, 25);
+            this.lblProdMapSumTotalPrice.TabIndex = 23;
+            this.lblProdMapSumTotalPrice.Text = "0.00";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(984, 640);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(45, 25);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "ETB";
+            // 
             // Product_Supplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 681);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.Pr_Map_TotalPrice_Label);
+            this.Controls.Add(this.lblProdMapSumTotalPrice);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.prMap_dataGridView1);
+            this.Controls.Add(this.dgvProdMapInformation);
             this.Controls.Add(this.groupBox2);
             this.Name = "Product_Supplier";
             this.Text = "Product_Supplier";
             this.Load += new System.EventHandler(this.Product_Supplier_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prMap_Qty_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericProdMapQty)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.prMap_dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdMapInformation)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -494,34 +494,34 @@
 
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker prMap_dateTimePicker;
+        private System.Windows.Forms.DateTimePicker dateTimePickerProdMap;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox prMap_Price_textBox;
-        private System.Windows.Forms.NumericUpDown prMap_Qty_numericUpDown;
+        private System.Windows.Forms.TextBox txtProdMapGivenPrice;
+        private System.Windows.Forms.NumericUpDown numericProdMapQty;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button prMap_save_button;
-        private System.Windows.Forms.Button prMap_new_button;
-        private System.Windows.Forms.Button prMap_update_button;
-        private System.Windows.Forms.Button prMap_delete_button;
+        private System.Windows.Forms.Button btnProdMapSaveNewInfo;
+        private System.Windows.Forms.Button btnProdMapClearForm;
+        private System.Windows.Forms.Button btnProdMapUpdateInfo;
+        private System.Windows.Forms.Button btnProdMapDeleteInfo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView prMap_dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProdMapInformation;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label prMap_totPrice_Label;
-        private System.Windows.Forms.ComboBox prMap_supp_comboBox;
+        private System.Windows.Forms.Label lblProdMapTotalPrice;
+        private System.Windows.Forms.ComboBox cboProdMapSupplierName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox prMap_prod_textBox;
+        private System.Windows.Forms.TextBox txtProdMapProduct;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker PrMap_search_dateTimePicker;
-        private System.Windows.Forms.ComboBox PrMap_search_supplier;
+        private System.Windows.Forms.DateTimePicker datePickerProdMapByDate;
+        private System.Windows.Forms.ComboBox cboProdMapSearchSupplier;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label Pr_Map_TotalPrice_Label;
+        private System.Windows.Forms.Label lblProdMapSumTotalPrice;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblSupplierId;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
